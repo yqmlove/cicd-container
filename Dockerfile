@@ -3,6 +3,7 @@ RUN apk add --no-cache nodejs npm
 
 WORKDIR /app
 COPY package.json /app
+RUN npm install nodemon
 RUN npm install
 
 COPY . /app
